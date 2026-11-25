@@ -1,0 +1,96 @@
+export const site = {
+  name: 'Vina Nuraini',
+  displayName: 'VINA',
+  shortName: 'Vina',
+  monogram: 'VN',
+  theme: 'Still Becoming.',
+  tagline: 'Somewhere between who I am and who I’m becoming.',
+  taglineAlt: 'A little world of stories, thoughts, and unfinished dreams.',
+  established: '2008',
+  issue: 'No. 01',
+  location: 'Jawa Barat, Indonesia',
+  instagram: {
+    handle: '@vin_vjr',
+    url: 'https://www.instagram.com/vin_vjr/',
+  },
+  hero: {
+    eyebrow: 'Notes on becoming · No. 01',
+    theme: 'Still Becoming.',
+    description:
+      'A collection of stories, thoughts, little discoveries, and moments that make me who I am.',
+    intro:
+      'Selamat datang di dunia kecil ini. Isinya bukan pencapaian, melainkan hal-hal yang sedang saya pelajari: cerita, film, bahasa, dan potongan hari yang terasa penting.',
+    cover: '/images/hero/portrait-interim.webp',
+    coverAlt:
+      'Tirai beludru merah anggur yang gelap disinari berkas cahaya sore, dengan sekuntum mawar gading kering di atas bangku kayu gelap.',
+    coverCaption: 'Plate I — The reading room',
+    coverNote: 'Interim cover. Sebuah potret pribadi akan menggantikan tempat ini.',
+    date: 'November 2026',
+    meta: ['Est. 2008', 'A Personal Archive'],
+  },
+  about: {
+    kicker: 'A little hard to define',
+    title: 'Perhaps I’m Still Figuring It Out.',
+    lead: 'Mungkin saya belum punya kata yang tepat untuk menggambarkan diri saya — dan untuk sekarang, itu terasa jujur.',
+    quote: {
+      text: 'Maybe I don’t have the perfect words to describe myself yet. I’m someone who enjoys discovering new things, creating stories, observing little details, and exploring different worlds through imagination. Some days I write, some days I dream, and some days I simply let myself discover something new.',
+      source: 'from a notebook, unfinished',
+    },
+    paragraphs: [
+      'Saya senang memperhatikan hal-hal kecil: cara cahaya berubah di dinding sore, kalimat dalam buku yang terasa ditulis untuk saya, atau adegan film yang tinggal jauh setelah kredit terakhir. Dari situlah cerita biasanya dimulai.',
+      'Ketika punya waktu senggang, saya menulis. Kadang berupa cerita pendek, kadang hanya satu adegan yang belum tahu ingin menjadi apa. Saya tidak selalu menyelesaikannya — dan akhir-akhir ini saya belajar bahwa halaman yang belum selesai juga tetap berarti.',
+      'Saya tidak ingin mendefinisikan diri hanya lewat satu hal. Ada film, sastra, bahasa, fotografi, dan banyak hal lain yang masih ingin saya jelajahi. Mungkin itu sebabnya ruang ini terasa lebih seperti buku catatan daripada profil.',
+    ],
+    personality: {
+      label: 'A little about my personality',
+      items: [
+        'Tenang di permukaan, tapi kepalanya jarang benar-benar sepi.',
+        'Lebih suka mengamati dulu sebelum ikut bicara.',
+        'Mudah penasaran pada hal-hal yang belum saya mengerti.',
+        'Menyukai percakapan panjang dan pagi yang lambat.',
+      ],
+    },
+    enjoy: {
+      label: 'Things I enjoy',
+      items: [
+        'Menulis cerita saat punya waktu senggang.',
+        'Menonton film dan membicarakannya setelahnya.',
+        'Fotografi analog dan proses yang tidak bisa dipercepat.',
+        'Kalimat-kalimat bagus di margin buku.',
+        'Belajar kata baru dalam bahasa lain.',
+      ],
+    },
+    discovering: {
+      label: 'Things I’m still discovering',
+      items: [
+        'Apa yang sebenarnya ingin saya ceritakan lewat film.',
+        'Cara menyelesaikan cerita tanpa kehilangan ketegangannya.',
+        'Bahasa Thailand dan Jepang — masih di tahap awal.',
+        'Gaya fotografi yang terasa paling jujur.',
+        'Arah yang tidak harus satu, dan itu tidak apa-apa.',
+      ],
+    },
+    details: [
+      { label: 'Nama lengkap', value: 'Vina Nuraini' },
+      { label: 'Dikenal sebagai', value: 'Vina' },
+      { label: 'Lahir', value: '2008' },
+      { label: 'Berdomisili di', value: 'Jawa Barat, Indonesia' },
+      { label: 'Saat ini', value: 'Masih menjadi' },
+      { label: 'Dalam satu kata', value: 'Penasaran' },
+    ],
+    note: 'Sebagian halaman ini akan berubah seiring saya berubah. Itu memang rencananya.',
+    portraitCaption: 'Fig. 01 — Self portrait, pending',
+  },
+  sectionIntros: {
+    about: 'Beberapa baris jujur, sebuah potret yang masih ditunggu, dan ruang untuk berubah.',
+    stories: 'Cerita-cerita yang saya tulis ketika waktu senggang — sebagian selesai, sebagian tidak.',
+    cinema: 'Tempat cerita menjadi gambar: inspirasi, proses, dan hal-hal di balik layar.',
+    interests: 'Hal-hal yang saya cari lagi ketika tidak ada yang menuntut apa pun dari saya.',
+    journey: 'Enam bab perjalanan yang masih berjalan — banyak halaman menunggu diisi.',
+    gallery: 'Potongan kecil dari dunia saya: cahaya, tempat, benda, dan ingatan.',
+    writing: 'Esai, puisi, catatan harian, dan surat yang tidak selalu dikirim.',
+    favorites: 'Rak yang terus berubah, berisi hal-hal yang saya cintai cukup untuk saya kembali lagi.',
+    currently: 'Kabar kecil dari meja — hal-hal yang sedang mengisi hari-hari saya.',
+    contact: 'This is not the whole story. Just a few pages of who I am.',
+  },
+} as const

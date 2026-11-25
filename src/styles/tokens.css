@@ -1,0 +1,149 @@
+/* =========================================================
+   VINA — Still Becoming
+   Design tokens · palette, type, rhythm
+   ========================================================= */
+
+:root {
+  color-scheme: light;
+
+  /* Raw palette */
+  --ivory: #f2eee7;
+  --ivory-deep: #e7dfd3;
+  --near-black: #171515;
+  --burgundy: #591c2b;
+  --maroon: #35131d;
+  --muted-gray: #99918b;
+  --dusty-rose: #a77c82;
+  --soft-gold: #b49a70;
+
+  /* Semantic · light */
+  --bg: #f2eee7;
+  --bg-alt: #e9e1d5;
+  --surface: #f7f4ef;
+  --surface-raised: #ece4d8;
+  --ink: #1b1817;
+  --ink-soft: #4c4440;
+  --muted: #6e665f;
+  --faint: #99918b;
+  --accent: #591c2b;
+  --accent-deep: #35131d;
+  --accent-soft: #a77c82;
+  --gold: #b49a70;
+  --gold-deep: #8f774e;
+  --line: rgba(53, 19, 29, 0.16);
+  --line-strong: rgba(53, 19, 29, 0.32);
+  --nav-bg: rgba(242, 238, 231, 0.84);
+  --scrim: rgba(23, 21, 21, 0.58);
+  --scrim-strong: rgba(18, 16, 16, 0.94);
+  --img-bg: #ddd4c6;
+  --btn-bg: #591c2b;
+  --btn-fg: #f5f0e8;
+  --btn-bg-hover: #35131d;
+  --focus: #8f774e;
+  --band-wine: #591c2b;
+  --band-wine-deep: #421621;
+  --band-dark: #171515;
+  --band-ink: #f2eee7;
+  --band-muted: rgba(242, 238, 231, 0.66);
+  --band-line: rgba(242, 238, 231, 0.22);
+  --grain-blend: multiply;
+  --grain-opacity: 0.055;
+  --selection-bg: #591c2b;
+  --selection-fg: #f2eee7;
+
+  /* Type */
+  --font-display: 'Playfair Display', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'DM Sans', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-ui: 'Inter', 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --text-2xs: 0.625rem;
+  --text-xs: 0.6875rem;
+  --text-sm: 0.8125rem;
+  --text-md: clamp(0.9375rem, 0.9rem + 0.16vw, 1.0625rem);
+  --text-lg: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.05rem + 0.8vw, 1.625rem);
+  --text-2xl: clamp(1.5rem, 1.2rem + 1.2vw, 2.125rem);
+  --display-1: clamp(3.75rem, 1.4rem + 9.4vw, 11rem);
+  --display-2: clamp(2.6rem, 1.5rem + 4.8vw, 5.75rem);
+  --display-3: clamp(2rem, 1.4rem + 2.6vw, 3.5rem);
+  --display-4: clamp(1.5rem, 1.2rem + 1.1vw, 2.125rem);
+
+  --leading-tight: 0.94;
+  --leading-snug: 1.18;
+  --leading-body: 1.7;
+  --leading-serif: 1.32;
+
+  --tracking-wide: 0.16em;
+  --tracking-label: 0.22em;
+  --tracking-tight: -0.02em;
+
+  /* Space & layout */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+  --s-10: 8rem;
+
+  --gutter: clamp(20px, 4.2vw, 72px);
+  --section-y: clamp(88px, 11vw, 168px);
+  --maxw: 1360px;
+  --measure: 64ch;
+  --nav-h: 84px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-editorial: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur-fast: 0.25s;
+  --dur: 0.5s;
+  --dur-slow: 0.9s;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg: #171515;
+  --bg-alt: #121010;
+  --surface: #1d1a19;
+  --surface-raised: #221e1d;
+  --ink: #efe8dc;
+  --ink-soft: #c9c1b6;
+  --muted: #a79e96;
+  --faint: #7e756e;
+  --accent: #ce9ca5;
+  --accent-deep: #e0b8bf;
+  --accent-soft: #a77c82;
+  --gold: #c6ae86;
+  --gold-deep: #d6bd93;
+  --line: rgba(242, 238, 231, 0.14);
+  --line-strong: rgba(242, 238, 231, 0.28);
+  --nav-bg: rgba(23, 21, 21, 0.8);
+  --scrim: rgba(8, 7, 7, 0.72);
+  --scrim-strong: rgba(10, 9, 9, 0.96);
+  --img-bg: #2a2524;
+  --btn-bg: #e7dfd3;
+  --btn-fg: #1b1817;
+  --btn-bg-hover: #f2eee7;
+  --focus: #d6bd93;
+  --band-wine: #3f1521;
+  --band-wine-deep: #2b0e16;
+  --band-dark: #0f0e0e;
+  --band-ink: #f2eee7;
+  --band-muted: rgba(242, 238, 231, 0.7);
+  --band-line: rgba(242, 238, 231, 0.24);
+  --grain-blend: screen;
+  --grain-opacity: 0.06;
+  --selection-bg: #ce9ca5;
+  --selection-fg: #171515;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --nav-h: 72px;
+  }
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>VINA — Still Becoming</title>
+    <meta
+      name="description"
+      content="A personal space by Vina Nuraini — cerita, pikiran, penemuan kecil, dan segala hal yang belum menjadi."
+    />
+    <meta name="author" content="Vina Nuraini" />
+    <meta name="theme-color" content="#F2EEE7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#171515" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="VINA — Still Becoming" />
+    <meta
+      property="og:description"
+      content="Somewhere between who I am and who I’m becoming. Cerita, tulisan, dan arsip pribadi oleh Vina Nuraini."
+    />
+    <meta property="og:image" content="/images/hero/portrait-interim.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VINA — Still Becoming" />
+    <meta
+      name="twitter:description"
+      content="Somewhere between who I am and who I’m becoming."
+    />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('vina-theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = stored === 'light' || stored === 'dark' ? stored : prefersDark ? 'dark' : 'light';
+          document.documentElement.dataset.theme = theme;
+        } catch (e) {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vina Nuraini",
+        "alternateName": "Vina",
+        "description": "A personal space by Vina Nuraini — cerita, pikiran, penemuan kecil, dan segala hal yang masih menjadi.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Jawa Barat",
+          "addressCountry": "ID"
+        },
+        "sameAs": ["https://www.instagram.com/vin_vjr/"]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
